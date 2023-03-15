@@ -3,14 +3,19 @@
 # Data: MAT, CAL1, CAL2, CAL3, CAL4, CAL5 Where: MAT is an integer variable that represents the student's enrolment.
 # CAL1, CAL2, CAL3, CAL4 and CAL5 are real-type variables representing the student's 5 grades.
 
-cal_1 = 9
-cal_2 = 9
-cal_3 = 3
-cal_4 = 4
-cal_5 = 5
-AVERAGE = (cal_1 + cal_2 + cal_3 + cal_4 + cal_5) // 5
+enrolment = "MAT"
+Grade_list = []
+n = 1
 
-if AVERAGE < 6:
-        print("MAT is not a approved.")
+while n < 6:
+    grades = int(input(f"Please enter your {n} grade : "))
+    Grade_list.append(grades)
+    n += 1 
+
+average_grade = sum(Grade_list) / len(Grade_list)
+
+if average_grade >= 6:
+    print(f"{enrolment} has an average garde {average_grade} and he is approved.")
+
 else:
-        print("MAT is approved. ")
+    print(f"{enrolment} has an average garde {average_grade} and he is not approved.")
