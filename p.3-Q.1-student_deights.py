@@ -19,15 +19,17 @@ print(f"Average height of the students is {average_height}.")
 above_average = 0
 below_average = 0
 equal_average_height = 0
-i = 0
-for student_heights[i] in student_heights:
-    if student_heights[i] > average_height:
+
+for student in student_heights:
+    if student > average_height:
         above_average += 1
     
-    elif student_heights[i] < average_height:
+    elif student < average_height:
         below_average += 1
     else:
         equal_average_height += 1
+
+
 
 print(f"{above_average} people are above average.")
 print(f"{below_average} people are below average.")
