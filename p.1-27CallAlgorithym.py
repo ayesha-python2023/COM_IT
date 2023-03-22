@@ -12,7 +12,7 @@ def table_of_N_number(numberN: int, result: int) -> int:
 
     return(result)
 #Now we can take any input from the user and get the table of that number:
-number_string = input("Please enter a number to get its table")
+number_string = input("Please enter a number to get its table: ")
 number = int(number_string)
 
 table_of_10 = table_of_N_number(number, 10)
