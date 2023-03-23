@@ -11,33 +11,36 @@
     charge VAT
     Apply discount and extra cost on vehicles
     """
+import csv
 
-type_1 = family
-type_2 = transportation
-type_3 = load
-#First thing is that how we going to store that data of 20 vehicles and we need to make dictionaries for that
+# Open the CSV file for reading
+with open('file.csv', 'r') as csvfile:
+    # Create a reader object
+    reader = csv.reader(csvfile)
 
-Vehicle_information = {
-    "type_1": "20,000,000"
-    "type_1": "30,000,000"
-    "type_1": "40,000,000"
-    "type_1": "50,000,000"
-    "type_1": "60,000,000"
-    "type_1": "70,000,000"
-    "type_2": "81,000,000"
-    "type_2": "90,000,000"
-    "type_3": "101,000,000"
-    "type_2": "110,000,000"
-    "type_2": "100,000,000"
-    "type_2": "105,000,000"
-    "type_3": "80,000,000"
-    "type_3": "50,000,000"
-    "type_3": "20,000,000"
-    "type_2": "40,000,000"
-    "type_2": "30,000,000"
-    "type_1": "100,000,000"
-    "type_2": "60,000,000"
-    "type_3": "90,000,000"
-}
+    # Iterate over the rows in the CSV file
+    for row in reader:
+        # Process each row
+        print(row)
 
+vehicle_types = []
+vehicle_prices = []
 
+i = 0
+while i < 1:
+    price = int(input("Please enter the amount of your vehicle: "))
+    vehicle_prices.append(vehicle_prices)
+    vehicle_type = input("Please enter the type of your vehicle: ")
+    vehicle_types.append(vehicle_type)
+    i += 1
+
+for vehicle_price in vehicle_prices:
+    if vehicle_price > 100000000:
+        charge_VAT = vehicle_price * .20
+        print(charge_VAT)
+    else:
+        charge_VAT = vehicle_price * .16
+        print(charge_VAT)
+print(vehicle_types)
+print(vehicle_prices)
+print()
