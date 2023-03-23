@@ -1,0 +1,8 @@
+#WRITE AN ALGORITHM THAT INVOKES ANOTHER ONE TO BE CALLED "ADD”, THAT RECEIVES TWO NUMBERS. THE "ADD" ALGORITHM MUST ADD THE PARAMETERS. 
+#THE INVOKING ALGORITHM SHOULD RECEIVE BACK THAT VALUE AND SHOW IT ON SCREEN.
+
+
+""""
+The solution to this exercise is already in
+the p1exercises folder, file name is "p.1-Q-28-Call_Algorithym_add.py"
+"""
