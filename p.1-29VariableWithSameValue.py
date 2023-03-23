@@ -10,4 +10,5 @@ def another_multi():
     number = 11
     number1 = 11
     print(number * number1)
+    multi()
 another_multi()
