@@ -1,4 +1,4 @@
-import filetoimport
+import python1Exercises.filetoimport as filetoimport
 
 number = 12
 number0 = 10
