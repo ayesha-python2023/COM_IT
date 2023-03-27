@@ -53,7 +53,7 @@ elif options == 2:
         else:
             print('Please enter a write command')
 else:
-    print("you are out")
+    print("You are out")
 
 #for purchase orders
 #shop = input("Please enter items description")
@@ -65,15 +65,16 @@ for items in range(0, 10):
     shop = input("Please enter items description: ")
 
     print(shop)
-    value = int(input("value: "))
+    value = int(input("Please enter the valu of the item:  : "))
     shop_value = value + shop_value
-    Net = shop_value
-    GST = shop_value * 10
-    PST = shop_value * 3
-    TOTAL = Net + GST + PST
+Net = shop_value
+GST = Net * .10
+PST = Net * .3
+TOTAL = Net + GST + PST
 print(f"Your net payment will be {Net}")
 print(f"GST will be {GST}")
 print(f"PST will be {PST}")
+print(f"Total will be {TOTAL}")
 
 
 
